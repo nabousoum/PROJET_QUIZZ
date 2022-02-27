@@ -1,0 +1,25 @@
+{
+    "users":[
+    {
+    "nom_complet":"Seynabou Soumare",
+    "login":"nabousoum@gmail.com",
+    "password":"nabousoum98",
+    "role":"ROLE_ADMIN",
+    "score":0
+    },
+    {
+    "nom_complet":"Fatou Diouf",
+    "login":"fatoudiouf@gmail.com",
+    "password":"fatoudiouf62",
+    "role":"ROLE_JOUEUR",
+    "score":15
+    },
+    {
+        "nom_complet":"ALioune Soumare",
+        "login":"lunesoum@gmail.com",
+        "password":"lunesoum56",
+        "role":"ROLE_JOUEUR",
+        "score":20
+        }
+    ]
+}
