@@ -8,6 +8,6 @@
     
     define("PATH_DB",ROOT."data/db.json");
 
-    define("WEB_ROOT","http://127.0.0.1/PROJET_QUIZ/public/");
+    define("WEB_ROOT","http://127.0.0.1:8000/");
 
-    define("PATH_POST","http://localhost:8001");
+    define("WEB_PUBLIC",str_replace("index.php","",$_SERVER['SCRIPT_NAME']));

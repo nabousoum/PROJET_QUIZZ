@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:url("../img/img-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(1px); */
+}
+#entete{
+    display: flex;
+    flex: 1;
+    background-color: rgb(8, 62, 66);
+    align-items: center;
+    justify-content: center;
+    margin: -1%;
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 8;
+  
+}
+#container{
+    width:40%;
+    height: 50%;
+}
+h1{
+    color:white;
+    font-size: xx-large;
+}
+form{
+    width:100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: white;
+}
+#container h1{
+    width: 38%;
+    color:whitesmoke;
+    margin-left: 5%;
+}
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 5%;
+    height: 10%;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color:  rgb(81,191,208);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  
+    color: white;
+    border: 1px solid  rgb(81,191,208);
+}
+#loginForm{
+    display: flex;
+    background-color:  rgb(81,191,208);
+}
+span{
+    align-self: flex-end;
+    color: whitesmoke;
+    margin-bottom: 4%;
+    margin-left: 50%;
+}
+#footer{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+a{
+    margin-left: 20%;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    margin-bottom: -1%;
+}
+b{
+    margin-left: 5%;
+}

@@ -1,0 +1,140 @@
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image:url("img/img-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(1px); */
+}
+#entete{
+  display: flex;
+  flex: 1;
+  background-color: rgb(8, 62, 66);
+  align-items: center;
+  justify-content: center;
+  margin: -1%;
+
+}
+#main{
+  display: flex;
+  flex: 8;
+  justify-content: center;
+}
+h1{
+  color:white;
+}
+#container{
+  margin-top: 1%;
+  background-color: white;
+  height: 94%;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+ flex-direction: column;
+}
+#top{
+  display: flex;
+  flex:1;
+  background-color: rgb(81,191,208);
+  justify-content: center;
+  border-radius: 10px;
+}
+#bottom{
+  display: flex;
+  flex: 6;
+  border-radius: 1Opx;
+}
+button{
+  height: 35%;
+  width: 10%;
+  background-color: rgb(57,221,214);
+  color:white;
+  border:1px solid  white;
+  margin-top: 1%;
+  font-size: large;
+}
+h2{
+  margin-left: 30%;
+  margin-right: 25%;
+  color: white;
+  font-size: x-large;
+}
+#left{
+  border-radius: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+  height: 75%;
+  flex:2;
+  display: flex;
+  flex-direction: column;
+}
+#right{
+  flex: 3;
+  background-color: bisque;
+}
+#left-top{
+  flex: 2;
+  display: flex;
+  background: linear-gradient(white ,rgb(81,191,208));
+}
+#left-bottom{
+  flex:4;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+#img1{
+  height: 90%;
+  width: 20%;
+  border: 1px solid rgb(81,191,208);
+  border-radius: 50%;
+}
+a{
+  text-decoration: none;
+  color: black;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: x-large;
+}
+#listeQuestion{
+  align-items: center;
+  display: flex;
+}
+#creerAdmin{
+  align-items: center;
+  display: flex;
+}
+#listerJoeur{
+  align-items: center;
+  display: flex;
+}
+#creerQuestion{
+  align-items: center;
+  display: flex;
+}
+#img2{
+  margin-top: 5%;
+  margin-left: 50%;
+  height: 40%;
+  width: 10%;
+}
+#img3{
+  margin-top: 5%;
+  margin-left: 55%;
+  height: 40%;
+  width: 10%;
+}
+#img4{
+  margin-top: 5%;
+  margin-left: 55%;
+  height: 40%;
+  width: 10%;
+}
+#img5{
+  margin-top: 5%;
+  margin-left: 50%;
+  height: 40%;
+  width: 10%;
+}

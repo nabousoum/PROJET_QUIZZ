@@ -11,11 +11,14 @@
     }
 
     if($_SERVER['REQUEST_METHOD']=="GET"){
-        if(isset($_GET['action'])){
-            if($_REQUEST['action']=='connexion'){
-                echo "traiter le formulaire de connexion";
+        /* if(isset($_GET['action'])){
+            if($_REQUEST['action']=='connexion'){ */
+               require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+            /* }
+            elseif($_REQUEST['action']=='deconnexion'){
+                logout();
             }
-        }
+        } */
     }
     
     function connexion(string $login,string $password){
@@ -30,10 +33,14 @@
            $user = find_user_login_password($login,$password);
            if(count($user)!=0){
                 $_SESSION['user-connect'] = $user;
+                header("location:".WEB_ROOT."?controller=user&action=accueil");
+                exit();
            }
            else{
                $errors['connexion']= "Login ou mot de passe incorect";
                 $_SESSION['errors'] = $errors;
+                header("location:".WEB_ROOT);
+                exit();
            }
         }
         else {
@@ -41,4 +48,9 @@
             header("location:".WEB_ROOT);
             exit();
         }
+    }
+    function logout(){
+        session_destroy();
+        header("location:".WEB_ROOT);
+        exit();
     }
