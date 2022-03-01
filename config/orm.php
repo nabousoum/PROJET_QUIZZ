@@ -8,6 +8,6 @@
     
     function array_to_json(string $key,array $data):array{
         $dataJson = json_encode($data[$key],true);
-        return $dataJson;
+        file_put_contents(PATH_DB,$dataJson);
     }
    

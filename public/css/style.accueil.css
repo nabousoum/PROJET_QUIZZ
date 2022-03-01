@@ -73,7 +73,11 @@ h2{
 #right{
   flex: 3;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  background-image:url("../img/quizz.jpg"); 
+  background-size: cover;
 }
+
 #left-top{
   flex: 2;
   display: flex;
@@ -100,7 +104,7 @@ a{
   margin-top: -4%;
 }
 .hov:hover {
-  background-color: gray;
+  background-color: rgb(236, 231, 231);;
 }
 #listeQuestion{
   align-items: center;

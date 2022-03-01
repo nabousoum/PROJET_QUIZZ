@@ -16,3 +16,6 @@
         }
         return $result;
     }
+    function insert_users(){
+        
+    }

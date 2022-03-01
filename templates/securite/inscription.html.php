@@ -20,7 +20,7 @@
                     </div>
                     <div id="formulaire">
                             <form id="form" action="#" method="POST">
-                            <input type="hidden" name="controller" value="securite">
+                            <input type="hidden" name="controller" value="user">
                             <input type="hidden" name="action" value="inscription">
                          
                             <div class="form-control">

@@ -31,7 +31,7 @@
                                 <img id="img2" src="img/Icônes/ic-liste.png" alt="">
                             </div>
                             <div class="hov" id="creerAdmin">
-                                <a href="">Créer Admin</a>
+                                <a href="<?= WEB_ROOT."?controller=user&action=creer.admin" ?>">Créer Admin</a>
                                 <img id="img3" src="img/Icônes/ic-ajout.png" alt="">
                             </div>
                             <div class="hov" id="listerJoeur">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div id="right">   
-                        
+                     
                     </div>
                </div>
             </div>

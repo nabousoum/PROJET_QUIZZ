@@ -12,6 +12,9 @@ ini_set('display_errors','on');
                 $login = $_POST['login'];
                 $password = $_POST['password'];
             }
+            elseif($_POST['action']=='inscriptionAdmin'){
+
+            }
         }
     }
 
@@ -23,7 +26,7 @@ ini_set('display_errors','on');
             }
             if($_REQUEST['action']=='accueil'){
                 if(is_admin()){
-                    lister_joueur();
+                    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
                 }
                 elseif (is_player()) {
                     jeu();
@@ -32,6 +35,9 @@ ini_set('display_errors','on');
             }
             elseif($_REQUEST['action']=="liste.joueur"){
                 lister_joueur();
+            }
+            elseif($_REQUEST['action']=="creer.admin"){
+                creer_admin();
             }
             else{
                 require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
@@ -48,4 +54,7 @@ ini_set('display_errors','on');
     }
     function jeu(){
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."jeu.html.php");
+    }
+    function creer_admin(){
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."enregistrerAdmin.html.php");
     }
