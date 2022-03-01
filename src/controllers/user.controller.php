@@ -6,6 +6,12 @@ ini_set('display_errors','on');
             if($_REQUEST['action']=='connexion'){
             
             }
+            elseif($_POST['action']=='inscription'){
+                $nom =  $_POST['nom'];
+                $prenom =  $_POST['prenom'];
+                $login = $_POST['login'];
+                $password = $_POST['password'];
+            }
         }
     }
 
@@ -16,16 +22,19 @@ ini_set('display_errors','on');
                 exit();
             }
             if($_REQUEST['action']=='accueil'){
-                /* if(is_admin()){
+                if(is_admin()){
                     lister_joueur();
                 }
                 elseif (is_player()) {
                     jeu();
-                } */
-               require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
+                } 
+               //require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");
             }
             elseif($_REQUEST['action']=="liste.joueur"){
                 lister_joueur();
+            }
+            else{
+                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
             }
         }
     }

@@ -11,14 +11,24 @@
     }
 
     if($_SERVER['REQUEST_METHOD']=="GET"){
-        /* if(isset($_GET['action'])){
-            if($_REQUEST['action']=='connexion'){ */
-               require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
-            /* }
+       
+         if(isset($_GET['action'])){
+            if($_REQUEST['action']=='inscription'){ 
+                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
+            }
             elseif($_REQUEST['action']=='deconnexion'){
                 logout();
             }
-        } */
+            elseif($_REQUEST['action']=='connexion'){
+                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+            }
+            else{
+                require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
+            }
+        }
+        else{
+            require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+        } 
     }
     
     function connexion(string $login,string $password){

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,6 +10,7 @@
     </head>
     <body>
        <div id="entete">
+           <!-- <img id="imgLogo" src="img/Icônes/logo-QuizzSA.png" alt=""> -->
             <h1>Le plaisir de jouer</h1>
         </div>
         <div id="main">
@@ -24,26 +26,26 @@
                             <p>AAAA BBBB</p>
                         </div>
                         <div id="left-bottom">
-                            <div id="listeQuestion">
+                            <div class="hov"  id="listeQuestion">
                                 <a href="#">Liste Questions</a>
                                 <img id="img2" src="img/Icônes/ic-liste.png" alt="">
                             </div>
-                            <div id="creerAdmin">
+                            <div class="hov" id="creerAdmin">
                                 <a href="">Créer Admin</a>
                                 <img id="img3" src="img/Icônes/ic-ajout.png" alt="">
                             </div>
-                            <div id="listerJoeur">
+                            <div class="hov" id="listerJoeur">
                                 <a href="<?= WEB_ROOT."?controller=user&action=liste.joueur" ?>">Lister Joueur</a>
                                 <img id="img4" src="img/Icônes/ic-liste-active.png" alt="">
                             </div>
-                            <div id="creerQuestion">
+                            <div class="hov" id="creerQuestion">
                                 <a href="">Créer Questions</a>
                                 <img id="img5" src="img/Icônes/ic-liste.png" alt="">
                             </div>
                         </div>
                     </div>
-                    <div id="right">
-
+                    <div id="right">   
+                        
                     </div>
                </div>
             </div>

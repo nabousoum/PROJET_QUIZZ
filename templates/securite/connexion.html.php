@@ -20,38 +20,41 @@
             </div>
             <div id="main">
                 <div id="container">
-                    <form action="<?= WEB_ROOT ?>" method="POST">
+                    <form id="form" action="<?= WEB_ROOT ?>" method="POST">
                         <input type="hidden" name="controller" value="securite">
                         <input type="hidden" name="action" value="connexion">
                         <div id="loginForm">
                             <h1>Connexion</h1>
                             <span>X</span>
                         </div>
-                    
                         <?php if(isset($errors['connexion'])): ?>
                             <small style="color:red"> <?= $errors['connexion']; ?> </small>
                         <?php endif ?><br>
-
-                        <label><b>LOGIN</b></label>
-                        <input type="text" placeholder="Login" name="login" >
+                        <div class="form-control">
+                            <label><b>LOGIN</b></label>
+                            <input id="login" type="text" placeholder="Login" name="login" >
+                        </div>
                         <?php if(isset($errors['login'])): ?>
                             <small style="color:red"> <?= $errors['login']; ?> </small>
                         <?php endif ?><br>
 
-                        <label><b>PASSWORD</b></label>
-                        <input type="password" placeholder="Password" name="password" >
+                        <div class="form-control">
+                            <label><b>PASSWORD</b></label>
+                            <input id="password" type="password" placeholder="Password" name="password" >
+                        </div>
                         <?php if(isset($errors['password'])): ?>
                             <small style="color:red"> <?= $errors['password']; ?> </small>
                         <?php endif ?><br>
+            
                         <div id="footer">
                             <input type="submit" id='submit' value='CONNEXION' >
-                            <a href="#">S inscrire pour jouer?</a>
+                            <a href="<?= WEB_ROOT."?controller=securite&action=inscription" ?>">S inscrire pour jouer?</a>
                         </div>
                     
                     </form>
                 </div>
             </div>
-        
+    <script src="<?= WEB_PUBLIC."js/script.connexion.js" ?>"></script>
     </body>
 
 </html>

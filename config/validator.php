@@ -5,8 +5,8 @@
         }
     }
     function valid_email(string $key,string $data,array &$errors,string $message="email invalid"){
-        if(!filter_var($data,FILTER_VALIDATE_EMAIL)){
-        $errors[$key]=$message;
+        if (!preg_match("/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+.[a-zA-Z]{2,4}/", $data)){
+            $errors[$key]=$message;
         }
     }
     function valid_password(string $key,string $data,array &$errors,string $message="password invalid"){
@@ -16,3 +16,5 @@
             $errors[$key]=$message;
         }
     }
+
+   
