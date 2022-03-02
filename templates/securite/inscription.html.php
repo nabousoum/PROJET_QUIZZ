@@ -1,3 +1,7 @@
+<?php 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,15 +52,19 @@
                                 <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" >
                                 <small>Error message</small>
                             </div>
-                            <div id="fot">
+                            <!-- <div id="fot">
                                 <h2>Avatar</h2>
-                                <!-- <input type="file" name="file" id=""> -->
+                                
                                 <button class="fot-btn">Choisir un fichier</button>
-                            </div>
+                            </div> -->
 
-                            <button class="fot-btn2">Créer compte</button>
+                            <button class="fot-btn2"> creer un compte</button> 
                             
-                        
+                        <?php
+                            if(isset($message)){
+                                echo $message;
+                            }
+                        ?>
                         </form>
                     </div>
                </div>

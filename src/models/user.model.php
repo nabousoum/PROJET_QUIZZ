@@ -16,6 +16,27 @@
         }
         return $result;
     }
-    function insert_users(){
-        
+    
+    function insert_users($nom,$prenom,$login,$password){
+        $data = array(
+            'nom' => $nom,
+            'prenom' =>  $prenom,
+            'login' =>  $login,
+            'password' => $password,
+            'role' =>  "ROLE_JOUEUR",
+            'score' => "0"
+        );  
+        array_to_json("users",$data);
+    }
+
+    function insert_admin($nom,$prenom,$login,$password){
+        $data = array(
+            'nom' => $nom,
+            'prenom' =>  $prenom,
+            'login' =>  $login,
+            'password' => $password,
+            'role' =>  "ROLE_ADMIN",
+            'score' => "0"
+        );  
+        array_to_json("users",$data);
     }

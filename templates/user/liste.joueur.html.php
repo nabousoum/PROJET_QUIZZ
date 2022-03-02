@@ -35,11 +35,11 @@
                             </div>
                             <div class="hov" id="listerJoeur">
                                 <a href="<?= WEB_ROOT."?controller=user&action=liste.joueur" ?>">Lister Joueur</a>
-                                <img id="img4" src="img/Icônes/ic-liste-active.png" alt="">
+                                <img id="img4" src="img/Icônes/ic-liste.png" alt="">
                             </div>
                             <div class="hov" id="creerQuestion">
                                 <a href="">Créer Questions</a>
-                                <img id="img5" src="img/Icônes/ic-liste.png" alt="">
+                                <img id="img5" src="img/Icônes/ic-ajout.png" alt="">
                             </div>
                         </div>
                     </div>

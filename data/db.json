@@ -1,42 +1,92 @@
 {
-    "users":[
-    {
-    "nom":"Soumare",
-    "prenom":"Seynabou",
-    "login":"nabousoum@gmail.com",
-    "password":"nabousoum98",
-    "role":"ROLE_ADMIN",
-    "score":0
-    },
-    {
-    "nom":"Diouf",
-    "prenom":"Fatou",
-    "login":"fatoudiouf@gmail.com",
-    "password":"fatoudiouf62",
-    "role":"ROLE_JOUEUR",
-    "score":15
-    },
-    {
-        "nom":"Soumare",
-        "prenom":"ALioune",
-        "login":"lunesoum@gmail.com",
-        "password":"lunesoum56",
-        "role":"ROLE_JOUEUR",
-        "score":20
-    },    {
-        "nom":"Soumare",
-        "prenom":"Awa",
-        "login":"awasoum@gmail.com",
-        "password":"awasoum93",
-        "role":"ROLE_JOUEUR",
-        "score":100
-    },    {
-        "nom":"Soumare",
-        "prenom":"Moussa",
-        "login":"moussasoum@gmail.com",
-        "password":"moussasoum56",
-        "role":"ROLE_JOUEUR",
-        "score":200
-    }
+    "users": [
+        {
+            "nom": "Soumare",
+            "prenom": "Seynabou",
+            "login": "nabousoum@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_ADMIN",
+            "score": 0
+        },
+        {
+            "nom": "Diouf",
+            "prenom": "Fatou",
+            "login": "fatoudiouf@gmail.com",
+            "password": "fatoudiouf62",
+            "role": "ROLE_JOUEUR",
+            "score": 15
+        },
+        {
+            "nom": "Soumare",
+            "prenom": "ALioune",
+            "login": "lunesoum@gmail.com",
+            "password": "lunesoum56",
+            "role": "ROLE_JOUEUR",
+            "score": 20
+        },
+        {
+            "nom": "Soumare",
+            "prenom": "Awa",
+            "login": "awasoum@gmail.com",
+            "password": "awasoum93",
+            "role": "ROLE_JOUEUR",
+            "score": 100
+        },
+        {
+            "nom": "Soumare",
+            "prenom": "Moussa",
+            "login": "moussasoum@gmail.com",
+            "password": "moussasoum56",
+            "role": "ROLE_JOUEUR",
+            "score": 200
+        },
+        {
+            "nom": "SYLLA",
+            "prenom": "Assane Ali",
+            "login": "nabousoum@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "test",
+            "prenom": "test",
+            "login": "test@gmail.com",
+            "password": "jetest01",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "nine",
+            "prenom": "bakhayoko",
+            "login": "bakha@gmail.com",
+            "password": "jetest02",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "gomis",
+            "prenom": "marc",
+            "login": "marcgomis02@gmail.com",
+            "password": "marcgomis02",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "Diallo",
+            "prenom": "Amadou Telly",
+            "login": "nabousoum@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        },
+        {
+            "nom": "hello",
+            "prenom": "hello",
+            "login": "hello12@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        }
     ]
 }

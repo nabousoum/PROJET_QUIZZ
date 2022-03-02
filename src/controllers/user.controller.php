@@ -1,19 +1,28 @@
 <?php
-ini_set('display_errors','on');
  require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
+
+
+ini_set('display_errors','on');
     if($_SERVER['REQUEST_METHOD']=="POST"){
         if(isset($_POST['action'])){
             if($_REQUEST['action']=='connexion'){
-            
+                
             }
             elseif($_POST['action']=='inscription'){
-                $nom =  $_POST['nom'];
-                $prenom =  $_POST['prenom'];
+                $nom = $_POST['nom'];
+                $prenom = $_POST['prenom'];
                 $login = $_POST['login'];
                 $password = $_POST['password'];
+                insert_users($nom,$prenom,$login,$password);
+                header("location:".WEB_ROOT);
             }
             elseif($_POST['action']=='inscriptionAdmin'){
-
+                $nom = $_POST['nom'];
+                $prenom = $_POST['prenom'];
+                $login = $_POST['login'];
+                $password = $_POST['password'];
+                insert_admin($nom,$prenom,$login,$password);
+                header("location:".WEB_ROOT."?controller=user&action=creer.admin");
             }
         }
     }
@@ -39,6 +48,9 @@ ini_set('display_errors','on');
             elseif($_REQUEST['action']=="creer.admin"){
                 creer_admin();
             }
+            elseif($_REQUEST['action']=="creer.question"){
+                creer_question();
+            }
             else{
                 require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
             }
@@ -57,4 +69,7 @@ ini_set('display_errors','on');
     }
     function creer_admin(){
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."enregistrerAdmin.html.php");
+    }
+    function creer_question(){
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."creerQuestion.html.php");
     }

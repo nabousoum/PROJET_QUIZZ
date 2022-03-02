@@ -28,6 +28,16 @@ function checkEmail(input){
         showError(input,"veuillez respecter les normes de l email");
     }
 }
+function testEmail(input){
+    const email = input.value.trim().toLowerCase();
+    const re =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(email)){
+        return true;
+    }
+    else{
+       return false;
+    }
+}
 function checkRequired(tabInput){
     tabInput.forEach(function(input){
         if (input.value.trim() === '' ){
@@ -52,6 +62,17 @@ function lengthCarac(input,min){
         showSuccess(input);
     }
 }
+function testlengthCarac(input){
+    const champ = input.value;
+    const number = /[0-9]/;
+    const letter = /[a-zA-Z]/;
+    if(champ<6 || (!number.test(champ)) || (!letter.test(champ))){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
 function comparePassword(input1, input2){
     if(input1.value != input2.value){
         showError(input2,"les deux mots de passe ne se ressemblent pas");
@@ -60,10 +81,11 @@ function comparePassword(input1, input2){
 
 //
 form.addEventListener('submit',function(e){
-    e.preventDefault();
-    checkRequired([nom,prenom,login,password,password2]);
-    checkEmail(login);
-    lengthCarac(password,6);
-    comparePassword(password,password2);
-    
+    if(!testEmail(login) || !testlengthCarac(password) ){
+        e.preventDefault();
+        checkRequired([nom,prenom,login,password,password2]);
+        checkEmail(login);
+        lengthCarac(password,6);
+        comparePassword(password,password2);
+    } 
 });
